@@ -18,7 +18,7 @@ export default function Footer() {
             Email
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/jakecompendio"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition"
