@@ -50,10 +50,16 @@ export default function Projects() {
               href="https://github.com/arcana022719/devproject"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-[18px] py-[10px] bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg no-underline transition-colors duration-200"
+              className="github-btn shadow-md shadow-blue-600/20"
             >
               <span>View on GitHub</span>
-              <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                width="15"
+                height="15"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"

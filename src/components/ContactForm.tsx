@@ -58,8 +58,8 @@ export default function ContactForm() {
             <div className="flex items-center gap-2">
               <span>📧</span>
               <span className="text-gray-300 font-medium">Email:</span>
-              <a href="mailto:jakecompendio@example.com" className="text-blue-500 hover:underline">
-                jakecompendio@example.com
+              <a href="mailto:jakecompendio02271@gmail.com" className="text-blue-500 hover:underline">
+                jakecompendio02271@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-2">
@@ -170,7 +170,7 @@ export default function ContactForm() {
               type="submit"
               id="submit-btn"
               disabled={isSubmitting}
-              className="w-full h-[50px] flex items-center justify-center bg-blue-600 hover:bg-blue-700 disabled:opacity-60 text-white text-[15px] font-semibold rounded-lg border-0 cursor-pointer transition-colors duration-200"
+              className="w-full h-[80px] flex items-center justify-center bg-blue-600 hover:bg-blue-700 disabled:opacity-60 text-white text-[15px] font-semibold rounded-lg border-0 cursor-pointer transition-colors duration-200"
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
