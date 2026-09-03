@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Compendio | Backend AI Engineer & Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" crossorigin="" href="./styles.css?v=9">
+    <script type="module" src="./index.js?v=9"></script>
+</head>
+
+<body class="bg-black text-white font-sans antialiased selection:bg-blue-500 selection:text-white"
+    style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div id="root">
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 w-full z-50">
+            <div class="bg-black/80 backdrop-blur-md border-b border-gray-800">
+                <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+                    <a href="#home" class="text-xl font-bold text-white tracking-wide">
+                        Jake<span class="text-blue-500">Compendio.</span>
+                    </a>
+                    <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+                        <li class="relative group">
+                            <a href="#home" class="text-gray-300 hover:text-white transition">Home</a>
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
+                        <li class="relative group">
+                            <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
+                        <li class="relative group">
+                            <a href="#skills" class="text-gray-300 hover:text-white transition">Skills</a>
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
+                        <li class="relative group">
+                            <a href="#projects" class="text-gray-300 hover:text-white transition">Projects</a>
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
+                        <li class="relative group">
+                            <a href="#experience" class="text-gray-300 hover:text-white transition">Experience</a>
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
+                        <li class="relative group">
+                            <a href="#education" class="text-gray-300 hover:text-white transition">Education</a>
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
+                        <li class="relative group">
+                            <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+                            <span
+                                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
+                    </ul>
+                    <button id="mobile-menu-btn" class="md:hidden text-white p-2 focus:outline-none"
+                        aria-label="Toggle menu">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu"
+                class="hidden md:hidden overflow-hidden transition-all duration-300 bg-black/95 backdrop-blur border-b border-gray-800">
+                <ul class="flex flex-col items-center gap-6 py-8">
+                    <li><a href="#home"
+                            class="mobile-nav-link text-gray-300 text-lg hover:text-blue-500 transition">Home</a></li>
+                    <li><a href="#about"
+                            class="mobile-nav-link text-gray-300 text-lg hover:text-blue-500 transition">About</a></li>
+                    <li><a href="#skills"
+                            class="mobile-nav-link text-gray-300 text-lg hover:text-blue-500 transition">Skills</a></li>
+                    <li><a href="#projects"
+                            class="mobile-nav-link text-gray-300 text-lg hover:text-blue-500 transition">Projects</a>
+                    </li>
+                    <li><a href="#experience"
+                            class="mobile-nav-link text-gray-300 text-lg hover:text-blue-500 transition">Experience</a>
+                    </li>
+                    <li><a href="#education"
+                            class="mobile-nav-link text-gray-300 text-lg hover:text-blue-500 transition">Education</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="mobile-nav-link text-gray-300 text-lg hover:text-blue-500 transition">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home"
+            class="min-h-screen flex items-center pt-24 md:pt-0 bg-linear-to-r from-black via-gray-900 to-black text-white">
+            <div class="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">Hi, I'm <span
+                            class="text-blue-500">Jake Compendio</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-200">Backend AI Engineer & Full Stack
+                        Developer<span class="text-blue-500"> |</span></h2>
+                    <p class="text-gray-400 max-w-xl mb-10 leading-relaxed text-base md:text-lg">
+                        Passionate Backend AI Engineer and Full Stack Developer specializing in building scalable REST
+                        APIs, relational database architectures, and robust backend services using TypeScript, Node.js,
+                        Fastify, and PostgreSQL. Currently interning at FlyRank AI.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#projects"
+                            class="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition font-semibold shadow-lg shadow-blue-600/20">View
+                            Work</a>
+                        <a href="#contact"
+                            class="px-6 py-3 rounded-lg bg-gray-900 hover:bg-gray-800 text-gray-200 hover:text-white transition font-medium border border-gray-800">Contact
+                            Me</a>
+                    </div>
+                </div>
+                <div class="flex justify-center md:justify-end">
+                    <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-full bg-blue-600/20 p-1">
+                        <div
+                            class="w-full h-full rounded-full border-4 border-blue-500 overflow-hidden float-animation hover:scale-105 transition-all duration-300 shadow-[0_0_50px_rgba(59,130,246,0.3)]">
+                            <img alt="Jake Compendio" class="w-full h-full object-cover" src="./assets/IDs.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="relative py-24 bg-black text-white overflow-hidden">
+            <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-150 h-50 bg-blue-500/10 blur-[120px]"></div>
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="mb-14">
+                    <h2 class="text-4xl md:text-5xl font-bold">About <span class="text-blue-500">Me</span></h2>
+                    <div class="w-20 h-1 bg-blue-500 mt-4 rounded-full"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-gray-300 leading-relaxed mb-6 text-base md:text-lg">
+                            I am a <span class="text-white font-semibold">Computer Science student at Visayas State
+                                University</span> and an aspiring <span class="text-blue-400 font-medium">Backend AI
+                                Engineer & Full Stack Developer</span>. I specialize in architecting performant
+                            server-side systems, secure REST APIs, and modern data-driven web applications.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed mb-6 text-base md:text-lg">
+                            My core technical expertise spans <span class="text-blue-400 font-medium">TypeScript,
+                                Node.js, Fastify, REST API Development, React, PostgreSQL, Git, GitHub, and JWT
+                                Authentication</span>. I love solving complex technical challenges with clean,
+                            maintainable, and scalable code.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed text-base">
+                            Currently, I am working as a <span class="text-white font-semibold">Backend AI Engineer
+                                Intern at FlyRank AI</span>, focusing on backend AI engineering, integrations, and
+                            high-performance server architectures.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="p-6 rounded-2xl bg-gray-900/50 hover:bg-gray-850 hover:-translate-y-1 transition duration-300">
+                            <h3 class="text-2xl font-bold text-blue-500">FlyRank AI</h3>
+                            <p class="text-gray-400 mt-2 text-sm">Backend AI Intern</p>
+                        </div>
+                        <div
+                            class="p-6 rounded-2xl bg-gray-900/50 hover:bg-gray-850 hover:-translate-y-1 transition duration-300">
+                            <h3 class="text-2xl font-bold text-blue-500">VSU</h3>
+                            <p class="text-gray-400 mt-2 text-sm">BS Computer Science</p>
+                        </div>
+                        <div
+                            class="p-6 rounded-2xl bg-gray-900/50 hover:bg-gray-850 hover:-translate-y-1 transition duration-300">
+                            <h3 class="text-3xl font-bold text-blue-500">9+</h3>
+                            <p class="text-gray-400 mt-2 text-sm">Core Technologies</p>
+                        </div>
+                        <div
+                            class="p-6 rounded-2xl bg-gray-900/50 hover:bg-gray-850 hover:-translate-y-1 transition duration-300">
+                            <h3 class="text-3xl font-bold text-blue-500">100%</h3>
+                            <p class="text-gray-400 mt-2 text-sm">Dedication & Passion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Skills Section -->
+        <section id="skills" class="py-24 bg-linear-to-b from-black via-gray-900 to-black text-white">
+            <div class="max-w-6xl mx-auto px-8">
+                <h2 class="text-4xl font-bold text-center mb-14">Tools &amp; <span class="text-blue-500">Skills</span>
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+
+                    <!-- TypeScript -->
+                    <div class="skill-card">
+                        <svg class="skill-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="18" fill="#3178C6" />
+                            <path
+                                d="M22 36h28v7h-10v32h-8V43H22v-7zm33 26c3 3.5 7 5.5 12 5.5 6.5 0 10.5-3.5 10.5-8 0-4.5-3.5-6.5-8.5-8l-3-1c-5-2-7-3.5-7-6 0-3 2.5-4.5 6-4.5 3.5 0 6.5 1.5 8.5 3.5l4-5c-3-2.5-7-4-12.5-4-7.5 0-12 4-12 9.5 0 5 3.5 7.5 8.5 9.5l3 1c5 2 7.5 3 7.5 5.5 0 3-2.5 4.5-6 4.5-4 0-7.5-2-9.5-4.5l-4.5 4.5z"
+                                fill="#FFF" />
+                        </svg>
+                        <span class="text-sm font-medium text-gray-200">TypeScript</span>
+                    </div>
+
+                    <!-- Node.js -->
+                    <div class="skill-card">
+                        <svg class="skill-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="18" fill="#1E293B" />
+                            <path d="M50 18L78 34V66L50 82L22 66V34L50 18Z" fill="#539E43" />
+                            <path
+                                d="M47 38h6v24h-6zM37 45c0-4 3-7 7-7h12c4 0 7 3 7 7v10c0 4-3 7-7 7H44c-4 0-7-3-7-7V45zm6 0v10h14V45H43z"
+                                fill="#FFF" />
+                        </svg>
+                        <span class="text-sm font-medium text-gray-200">Node.js</span>
+                    </div>
+
+                    <!-- Fastify -->
+                    <div class="skill-card">
+                        <svg class="skill-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="18" fill="#0F172A" />
+                            <path d="M54 16L26 52h18l-6 32 34-40H52l6-28z" fill="#38BDF8" />
+                        </svg>
+                        <span class="text-sm font-medium text-gray-200">Fastify</span>
+                    </div>
+
+                    <!-- REST API Development -->
+                    <div class="skill-card">
+                        <svg class="skill-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="18" fill="#1E293B" />
+                            <circle cx="50" cy="50" r="30" stroke="#3B82F6" stroke-width="4" stroke-dasharray="6 3" />
+                            <rect x="25" y="42" width="50" height="16" rx="4" fill="#3B82F6" />
+                            <text x="50" y="54" fill="#FFF" font-family="monospace" font-size="12" font-weight="bold"
+                                text-anchor="middle">REST</text>
+                        </svg>
+                        <span class="text-sm font-medium text-gray-200">REST API Development</span>
+                    </div>
+
+                    <!-- React -->
+                    <div class="skill-card">
+                        <svg class="skill-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="18" fill="#0F172A" />
+                            <circle cx="50" cy="50" r="6" fill="#61DAFB" />
+                            <ellipse cx="50" cy="50" rx="34" ry="13" stroke="#61DAFB" stroke-width="3" />
+                            <ellipse cx="50" cy="50" rx="34" ry="13" stroke="#61DAFB" stroke-width="3"
+                                transform="rotate(60 50 50)" />
+                            <ellipse cx="50" cy="50" rx="34" ry="13" stroke="#61DAFB" stroke-width="3"
+                                transform="rotate(120 50 50)" />
+                        </svg>
+                        <span class="text-sm font-medium text-gray-200">React</span>
+                    </div>
+
+                    <!-- PostgreSQL -->
+                    <div class="skill-card">
+                        <svg class="skill-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="18" fill="#1E293B" />
+                            <path
+                                d="M50 20c-16 0-28 12-28 28 0 14 9 24 22 27v-8c-2-.6-4-2-4-4 0-3 3-5 7-5s7 2 7 5c0 2-2 3.4-4 4v8c13-3 22-13 22-27 0-16-12-28-28-28z"
+                                fill="#336791" />
+                            <circle cx="43" cy="40" r="3" fill="#FFF" />
+                            <circle cx="57" cy="40" r="3" fill="#FFF" />
+                            <path d="M46 48c2 2 6 2 8 0" stroke="#FFF" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <span class="text-sm font-medium text-gray-200">PostgreSQL</span>
+                    </div>
+
+                    <!-- Git -->
+                    <div class="skill-card">
+                        <svg class="skill-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="18" fill="#1E293B" />
+                            <path
+                                d="M80 47L53 20a5 5 0 0 0-7 0L38 28l9 9a5 5 0 0 1 6 6l8 8a5 5 0 1 1-4 4L59 47v18a5 5 0 1 1-6 0V45a5 5 0 0 1 3-5L48 32 24 56a5 5 0 0 0 0 7l27 27a5 5 0 0 0 7 0l22-22a5 5 0 0 0 0-7z"
+                                fill="#F05032" />
+                        </svg>
+                        <span class="text-sm font-medium text-gray-200">Git</span>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="skill-card">
+                        <svg class="skill-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="18" fill="#0F172A" />
+                            <path fill="#FFF" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M50 20C33.43 20 20 33.43 20 50c0 13.26 8.6 24.5 20.52 28.46 1.5.28 2.05-.65 2.05-1.44 0-.71-.03-2.6-.04-5.1-8.34 1.81-10.1-4.02-10.1-4.02-1.37-3.47-3.34-4.39-3.34-4.39-2.72-.93.2-.91.2-.91 3.02.21 4.6 3.1 4.6 3.1 2.67 4.58 7.02 3.26 8.73 2.5.27-1.94 1.05-3.26 1.9-4.01-6.66-.76-13.67-3.33-13.67-14.84 0-3.28 1.17-5.96 3.09-8.06-.31-.76-1.34-3.81.29-7.95 0 0 2.52-.81 8.26 3.08 2.4-.67 4.97-1 7.53-1 2.57 0 5.14.33 7.54 1 5.73-3.89 8.25-3.08 8.25-3.08 1.63 4.14.6 7.19.3 7.95 1.93 2.1 3.08 4.78 3.08 8.06 0 11.54-7.02 14.07-13.71 14.81 1.08.93 2.04 2.76 2.04 5.56 0 4.01-.04 7.25-.04 8.24 0 .8.54 1.73 2.06 1.44C71.41 74.49 80 63.25 80 50c0-16.57-13.43-30-30-30z" />
+                        </svg>
+                        <span class="text-sm font-medium text-gray-200">GitHub</span>
+                    </div>
+
+                    <!-- JWT Authentication -->
+                    <div class="skill-card">
+                        <svg class="skill-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" rx="18" fill="#1E293B" />
+                            <path d="M50 20L76 35V65L50 80L24 65V35L50 20Z" fill="#D63AFF" opacity="0.2" />
+                            <path d="M50 24L72 37V63L50 76L28 63V37L50 24Z" stroke="#D63AFF" stroke-width="2" />
+                            <path d="M50 32L64 40V60L50 68L36 60V40L50 32Z" fill="#00B9F1" opacity="0.4" />
+                            <text x="50" y="55" fill="#FFF" font-family="sans-serif" font-size="13" font-weight="bold"
+                                text-anchor="middle">JWT</text>
+                        </svg>
+                        <span class="text-sm font-medium text-gray-200">JWT Authentication</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 bg-linear-to-b from-black via-gray-900 to-black text-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-16">Featured <span class="text-blue-500">Projects</span>
+                </h2>
+
+                <div style="background-color: #0c1322; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.08); padding: 32px;"
+                    class="hover:border-blue-500/40 transition duration-300">
+                    <div
+                        style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px;">
+                        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px;">
+                            <h3 style="font-size: 24px; font-weight: 700; color: #ffffff; margin: 0;">Project Management
+                                System</h3>
+                            <span
+                                style="display: inline-flex; align-items: center; font-size: 12px; font-weight: 500; padding: 4px 12px; border-radius: 9999px; background-color: rgba(59, 130, 246, 0.15); color: #60a5fa;">August
+                                2026 – Present</span>
+                        </div>
+                        <a href="https://github.com/arcana022719/devproject" target="_blank"
+                            style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; background-color: #2563eb; color: #ffffff; font-size: 14px; font-weight: 600; border-radius: 8px; text-decoration: none; width: fit-content; transition: background-color 0.2s;"
+                            onmouseover="this.style.backgroundColor='#1d4ed8'"
+                            onmouseout="this.style.backgroundColor='#2563eb'">
+                            <span>View on GitHub</span>
+                            <svg width="15" height="15" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <p class="text-gray-300 text-base mb-6 leading-relaxed">
+                        Developing a full-stack project management application with a REST API backend and PostgreSQL
+                        database. Implemented JWT authentication, protected API routes, relational database schemas, and
+                        request validation.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-xs font-medium px-3 py-1.5 rounded-lg bg-gray-800 text-blue-400">TypeScript</span>
+                        <span
+                            class="text-xs font-medium px-3 py-1.5 rounded-lg bg-gray-800 text-blue-400">Node.js</span>
+                        <span
+                            class="text-xs font-medium px-3 py-1.5 rounded-lg bg-gray-800 text-blue-400">Fastify</span>
+                        <span
+                            class="text-xs font-medium px-3 py-1.5 rounded-lg bg-gray-800 text-blue-400">PostgreSQL</span>
+                        <span class="text-xs font-medium px-3 py-1.5 rounded-lg bg-gray-800 text-blue-400">JWT</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-24 bg-linear-to-b from-black via-gray-900 to-black text-white">
+            <div class="max-w-6xl mx-auto px-8">
+                <h2 class="text-4xl font-bold mb-16">My <span class="text-blue-500">Experience</span></h2>
+                <div class="relative border-l border-gray-700 pl-10 space-y-14">
+                    <div class="relative">
+                        <span
+                            class="absolute -left-13 top-1 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-blue-500/20"></span>
+                        <span
+                            class="inline-block mb-2 px-3 py-1 text-sm rounded-md bg-blue-500/10 text-blue-400">September
+                            2026 – Present</span>
+                        <h3 class="text-xl font-semibold text-white">Backend AI Engineer - Intern</h3>
+                        <p class="text-gray-400 mb-3">FlyRank AI (Remote)</p>
+                        <p class="text-gray-300 leading-relaxed">
+                            Currently interning at FlyRank AI as an AI intern, focusing on Backend AI Engineering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Achievements Section -->
+        <section id="education" class="py-24 bg-black text-white">
+            <div class="max-w-6xl mx-auto px-8">
+                <h2 class="text-4xl font-bold mb-16">Education &amp; <span class="text-blue-500">Achievements</span>
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+
+                    <!-- Education -->
+                    <div class="bg-gray-900/40 p-8 rounded-3xl">
+                        <h3 class="text-2xl font-bold text-white mb-6">Education</h3>
+                        <div class="space-y-3">
+                            <h4 class="text-xl font-semibold text-blue-400">Bachelor of Science in Computer Science</h4>
+                            <p class="text-gray-200 font-medium text-sm">Visayas State University</p>
+                            <p class="text-gray-400 text-sm mt-3 leading-relaxed">
+                                Focusing on software development, algorithms, backend system architectures, data
+                                structures, and computer science fundamentals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certifications & Achievements -->
+                    <div class="bg-gray-900/40 p-8 rounded-3xl">
+                        <h3 class="text-2xl font-bold text-white mb-6">Certifications &amp; Achievements</h3>
+                        <ul class="space-y-4 text-sm md:text-base">
+                            <li class="flex items-start gap-3">
+                                <span class="w-2 h-2 rounded-full bg-blue-500 mt-2 shrink-0"></span>
+                                <div>
+                                    <span class="font-semibold text-white">Cisco</span>
+                                    <span class="text-gray-400"> — Introduction to Data Science</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-2 h-2 rounded-full bg-blue-500 mt-2 shrink-0"></span>
+                                <div>
+                                    <span class="font-semibold text-white">Beyond the Terminal</span>
+                                    <span class="text-gray-400"> — Web Development &amp; UI/UX Essentials</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-2 h-2 rounded-full bg-blue-500 mt-2 shrink-0"></span>
+                                <div>
+                                    <span class="font-semibold text-white">Trend UCTF</span>
+                                    <span class="text-blue-400 font-medium"> — 10th Place</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-2 h-2 rounded-full bg-blue-500 mt-2 shrink-0"></span>
+                                <div>
+                                    <span class="font-semibold text-white">QUBIT CTF</span>
+                                    <span class="text-gray-400"> — Participant</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-linear-to-b from-black via-gray-900 to-black text-white">
+            <div class="max-w-3xl mx-auto px-6" style="max-width: 780px;">
+                <div class="flex items-center gap-6 mb-16">
+                    <span class="flex-1 h-px bg-blue-500/60"></span>
+                    <h2 class="text-4xl font-bold whitespace-nowrap">Contact <span class="text-blue-500">Me</span></h2>
+                    <span class="flex-1 h-px bg-blue-500/60"></span>
+                </div>
+
+                <!-- Top Info Row -->
+                <div class="grid md:grid-cols-2 gap-8 mb-8 items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Let's Work Together</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Feel free to reach out if you have a project in mind, want to collaborate, or just want to
+                            say hello.
+                        </p>
+                    </div>
+                    <div class="space-y-2 md:pl-6 text-sm">
+                        <div class="flex items-center gap-2">
+                            <span>📧</span>
+                            <span class="text-gray-300 font-medium">Email:</span>
+                            <a href="mailto:jakecompendio@example.com"
+                                class="text-blue-500 hover:underline">jakecompendio@example.com</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💼</span>
+                            <span class="text-gray-300 font-medium">Linkedin:</span>
+                            <a href="https://www.linkedin.com/in/jakecompendio/" target="_blank"
+                                class="text-blue-500 hover:underline">Jake
+                                Compendio</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💻</span>
+                            <span class="text-gray-300 font-medium">GitHub:</span>
+                            <a href="https://github.com/arcana022719" target="_blank"
+                                class="text-blue-500 hover:underline">github.com/arcana022719</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div
+                    style="background-color: #0c1322; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.08); padding: 32px;">
+                    <form id="contact-form" class="space-y-5">
+                        <div>
+                            <label class="block mb-2 text-sm font-semibold text-white">Name</label>
+                            <input placeholder="Your name"
+                                style="width: 100%; height: 48px; padding: 0 16px; background-color: #060a12; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; color: #ffffff; font-size: 14px; outline: none;"
+                                type="text" name="name" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-sm font-semibold text-white">Email</label>
+                            <input placeholder="Your email"
+                                style="width: 100%; height: 48px; padding: 0 16px; background-color: #060a12; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; color: #ffffff; font-size: 14px; outline: none;"
+                                type="email" name="email" required>
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-sm font-semibold text-white">Message</label>
+                            <textarea name="message" rows="4" placeholder="Your message"
+                                style="width: 100%; min-height: 120px; padding: 14px 16px; background-color: #060a12; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; color: #ffffff; font-size: 14px; outline: none; resize: vertical;"
+                                required></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn"
+                            style="width: 100%; height: 50px; display: flex; align-items: center; justify-content: center; background-color: #2563eb; color: #ffffff; font-size: 15px; font-weight: 600; border-radius: 8px; border: none; cursor: pointer; transition: background-color 0.2s;"
+                            onmouseover="this.style.backgroundColor='#1d4ed8'"
+                            onmouseout="this.style.backgroundColor='#2563eb'">Send Message</button>
+                        <p id="form-status" class="hidden text-center text-sm font-medium mt-2 text-green-400"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black py-10" style="border: none;">
+            <div class="max-w-3xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-500"
+                style="max-width: 780px;">
+                <div class="text-center md:text-left">
+                    <p>© 2026 <span class="text-gray-300 font-semibold">Jake Compendio</span>. All rights reserved.</p>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="mailto:jakecompendio02271@gmail.com" class="hover:text-blue-500 transition">Email</a>
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-blue-500 transition">LinkedIn</a>
+                    <a href="https://github.com/arcana022719" target="_blank"
+                        class="hover:text-blue-500 transition">GitHub</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
